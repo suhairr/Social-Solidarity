@@ -1,47 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header with Logo and Buttons</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- normalize css file-->
+    <link rel="stylesheet" href="CSS/Normalize.css">
+    <!-- main css file-->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="./output.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Jomhuria&family=Roboto+Slab:wght@300;500;600;700;900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:wght@300;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-
+    <!--Font awesome-->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <title>Web site</title>
 </head>
+
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-
-    <header>
-     
-        <div class="logo">MyLogo</div>
-        <img src="images\logo.png" alt="Logo">
-
-        <nav class="nav-buttons">
-            <button>الرئسية</button>
-            <button>الخدمات</button>
-            <button>تواصل معنا</button>
-        </nav>
-    </header>
-
-    <div class="row">
-        
-    <div class=" column1">
-        <h1>تعـــــــــــــاون الهئيـــــــــة العــــــامة لصندوق التضامن الاجتماعي</h1>
-        <p3>The Health Center Program Compliance Manual and other resources to help current <br>
-        and prospective health centers understand program requirements.</p3>
-        <div>
-        <div class="column2">
-      <img src="images/hghg.png" alt="banner" width="100%"  height="100%" padding="0.34rem">
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#services">الرئيسية</a></li>
+                    <li><a href="#portfolio">الخدمات</a></li>
+                    <li><a href="#about">تواصل معنا</a></li>
+                </ul>
+            </div>
         </div>
-
-      
-           
+    </div>
+    <div class="landing">
+        <div class="intro-text">
+            <h1>اهلا بكم في موقعنا</h1>
+            <p>هذا الموقع يحتوي على الخدمات التالية</p>
+        </div>
+    </div>
+    <div class="about-authority">
+        <div class="text-container">
+            <h2 class="special-heading">عن الهيئة</h2>
+            <span class="line"></span>
+            <p>نشئت الهيئة العامة لصندوق التضامن الاجتماعي بموجب القانون رقم 20 لسنة 1428و.ر، بشأن التضامن الاجتماعي
+                والمعدل بالقانون
+                رقم 10 لسنة 1430و.ر بشأن صندوق الرعاية الاجتماعية ، نظاماً يحقق التكافل والتضامن الاجتماعي لأبناء …..)
+                ويحقق الرعاية
+                الشاملة لمن ضاقت بهم السبل العيش الكريم – وفاقدي السند الاجتماعي – وذوي الطوارئ الاجتماعية</p>
+        </div>
+    </div>
+    <div class="our-Message">
+        <div class="text-container">
+            <h2 class="special-heading">رسالتنا</h2>
+            <span class="line"></span>
+            <div class="message-container">
+                <div class="message">
+                    <img src="Images/BookImage.png" alt="">
+                    <p>ملتزمون بتطبيق قواعد الحوكمة لدعم لتعليمي</p>
+                </div>
+                <div class="message">
+                    <img src="Images/JudgeImage.png" alt="">
+                    <p>نسعى دائماً إلى تحقيق العدالة والمساواة.</p>
+                </div>
+                <div class="message">
+                    <img src="Images/handImage.png" alt="">
+                    <p>نعمل بشكل دؤوب لخدمة لخدمات الحماية والرعاية</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
