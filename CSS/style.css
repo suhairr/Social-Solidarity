@@ -85,8 +85,8 @@ header .container {
 }
 
 header .logo img {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
 }
 
 header nav {
@@ -108,7 +108,7 @@ header nav ul li a {
     color: white;
     padding: 20px 10px;
     display: block;
-    font-size: 14px;
+    font-size: 17px;
     transition: 0.3s;
 }
 
@@ -130,7 +130,7 @@ header nav ul li a:hover {
 /* Start Landing */
 .landing {
     height: calc(100vh - 97px);
-    background-image: url(../images/landing.jpg);
+    background-image: url(../images/Group\ 131.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -151,10 +151,12 @@ header nav ul li a:hover {
 }
 
 .landing .text h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 0;
-    letter-spacing: -1
+    letter-spacing: -2
 }
+
+
 
 .landing .text p {
     line-height: 1.6;
@@ -240,8 +242,12 @@ header nav ul li a:hover {
 .our-message .container .content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 90px;
     margin-top: 60px;
+}
+
+.our-message .container .content .col:not(:first-child){
+    border-right: 1px solid var(--main-color);
 }
 
 .our-message .container .content .col {
@@ -439,8 +445,9 @@ footer .container .logo {
 }
 
 footer .container .logo img {
-    max-width: 100%;
-    width: 100%;
+    /* max-width: 100%; */
+    width: 150px;
+    height: 150px;
 }
 
 footer .container .main-info {
