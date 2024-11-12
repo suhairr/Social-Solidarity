@@ -55,17 +55,36 @@ function createContent(item) {
     return clone; // Return the DOM element instead of HTML
 }
 
+const customIcon = L.icon({
+    iconUrl: 'Images\\location-pin.png', // Path to your custom pin image
+    iconSize: [40, 40],              // Size of the icon [width, height]
+    iconAnchor: [16, 32],            // Anchor point of the icon (for centering)
+    popupAnchor: [0, -32]            // Where the popup opens relative to the icon anchor
+});
+
+var i = 0;
 // Add markers to the map
 function addMarkersToMap(map, data) {
     data.forEach(item => {
-        const marker = L.marker([item.latitude, item.longitude]).addTo(map);
+        if (i % 2 === 0) {
+            const marker = L.marker([item.latitude, item.longitude], { icon: customIcon }).addTo(map);
+            // Bind dynamic popup content
+            marker.bindPopup(() => {
+                return createContent(item);
+            });
 
-        // Bind dynamic popup content
-        marker.bindPopup(() => {
-            return createContent(item);
-        });
+            marker.on('click', () => marker.openPopup());
+        }
+        else {
+            const marker = L.marker([item.latitude, item.longitude]).addTo(map);
+            // Bind dynamic popup content
+            marker.bindPopup(() => {
+                return createContent(item);
+            });
 
-        marker.on('click', () => marker.openPopup());
+            marker.on('click', () => marker.openPopup());
+        }
+        i++;
     });
 }
 
